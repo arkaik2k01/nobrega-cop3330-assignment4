@@ -1,0 +1,30 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class App {
+    main()
+    start()
+}
+
+class Item {
+    date
+    description
+    status
+
+    get()
+    set()
+    Item()
+}
+
+class ToDoList {
+    ArrayList<Item> todo
+    String title
+
+    searchItem()
+    addItem()
+    removeItem()
+    ToDoList(String)
+    displayList(int)
+}
+
+@enduml
