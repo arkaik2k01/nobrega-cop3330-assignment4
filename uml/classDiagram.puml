@@ -6,8 +6,9 @@ class Item {
     description
     status
 
-    get()
-    set()
+    gets()
+    sets()
+    toString()
 }
 
 class ToDoList {
@@ -31,8 +32,10 @@ class ToDoController {
 class ToDoView {
 }
 
-ToDo--ToDoList
-ToDoList--Item
+ToDo--ToDoView
+ToDo--ToDoController
+ToDo*--ToDoList : at least 100 <
+ToDoList*--Item : at least 100 <
 javafx.Application<|---ToDo
 
 @enduml
