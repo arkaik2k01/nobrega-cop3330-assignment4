@@ -1,11 +1,6 @@
 @startuml
 'https://plantuml.com/class-diagram
 
-class App {
-    main()
-    start()
-}
-
 class Item {
     date
     description
@@ -13,7 +8,6 @@ class Item {
 
     get()
     set()
-    Item()
 }
 
 class ToDoList {
@@ -23,8 +17,22 @@ class ToDoList {
     searchItem()
     addItem()
     removeItem()
-    ToDoList(String)
     displayList(int)
 }
+
+class ToDo {
+    main()
+    start()
+}
+
+class ToDoController {
+}
+
+class ToDoView {
+}
+
+ToDo--ToDoList
+ToDoList--Item
+javafx.Application<|---ToDo
 
 @enduml
