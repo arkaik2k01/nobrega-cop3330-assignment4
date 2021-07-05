@@ -10,12 +10,22 @@ public class ToDoMaster
     public ToDoList getList(String title)
     {
         //If masterList contains title
-            //return list
+        //return list
         return null;
     }
 
     public Map<String, ToDoList> getMasterList()
     {
         return masterList;
+    }
+
+    public void removeFromMaster(String text)
+    {
+        //Remove text ToDoList
+    }
+
+    public void addToMaster(String title)
+    {
+        //Create ToDoList from given title
     }
 }

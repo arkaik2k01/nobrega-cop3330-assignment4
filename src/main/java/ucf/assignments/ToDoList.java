@@ -13,13 +13,13 @@ public class ToDoList
         this.title = title;
     }
 
-    public void addItem(String desc, Date date)
+    public void addTask(String desc, Date date)
     {
-        //Create item with given desc and date
+        //Create task with given desc and date
         //Add date to list
     }
 
-    public void removeItem(Task toRemove)
+    public void removeTask(Task toRemove)
     {
         //If list contains task
             //Delete item from to do list

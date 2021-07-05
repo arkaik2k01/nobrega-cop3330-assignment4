@@ -12,6 +12,7 @@ public class Task
     {
         this.date = date;
         this.description = description;
+        this.check = false;
     }
 
     public Date getDate()

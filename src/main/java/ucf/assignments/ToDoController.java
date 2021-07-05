@@ -40,7 +40,8 @@ public class ToDoController
     public void deleteCurrent(MouseEvent mouseEvent)
     {
         //Set view list to null/empty
-        //Delete list from masterMap
+        //Get text from title
+        //call removeFromMasterList(text)
     }
 
     @FXML
