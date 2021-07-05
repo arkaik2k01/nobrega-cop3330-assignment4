@@ -1,7 +1,7 @@
 @startuml
 'https://plantuml.com/class-diagram
 
-class Item {
+class Task {
     date
     description
     status
@@ -12,10 +12,9 @@ class Item {
 }
 
 class ToDoList {
-    ArrayList<Item> todo
+    ArrayList<Task> todo
     String title
 
-    searchItem()
     addItem()
     removeItem()
     displayList(int)
@@ -26,7 +25,18 @@ class ToDo {
     start()
 }
 
+class ToDoMaster {
+    Map<String, ToDoList> masterList
+
+    searchMasterList(String)
+    getList(String)
+    get()
+}
+
 class ToDoController {
+    current : ToDoList
+    currentTask : Task
+    master : Map
 }
 
 class ToDoView {
@@ -34,8 +44,9 @@ class ToDoView {
 
 ToDo--ToDoView
 ToDo--ToDoController
-ToDo*--ToDoList : at least 100 <
-ToDoList*--Item : at least 100 <
+ToDo--ToDoMaster
+ToDoMaster*--ToDoList : at least 100 <
+ToDoList*--Task : at least 100 <
 javafx.Application<|---ToDo
 
 @enduml
