@@ -14,6 +14,10 @@ public class ToDo
         launch();
     }
 
+    private static void launch()
+    {
+    }
+
     public void start(Stage primaryStage)
     {
         try {

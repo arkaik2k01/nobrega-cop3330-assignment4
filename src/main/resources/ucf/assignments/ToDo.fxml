@@ -18,8 +18,10 @@
               <items>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
-                        <TextField layoutX="14.0" layoutY="13.0" onKeyPressed="#getList" prefHeight="25.0" prefWidth="490.0" promptText="Enter a new list title or an existing list title" />
-                        <Button layoutX="515.0" layoutY="13.0" mnemonicParsing="false" onMouseClicked="#deleteCurrent" text="Delete list" />
+                        <TextField layoutX="14.0" layoutY="13.0" onKeyPressed="#getList" prefHeight="25.0" prefWidth="241.0" promptText="Enter a new list title or an existing list title" />
+                        <Button layoutX="265.0" layoutY="13.0" mnemonicParsing="false" onMouseClicked="#deleteCurrent" text="Delete list" />
+                        <Button layoutX="532.0" layoutY="13.0" mnemonicParsing="false" onAction="#importList" text="Import" />
+                        <Button layoutX="424.0" layoutY="13.0" mnemonicParsing="false" onAction="#exportList" text="Export" />
                      </children>
                   </AnchorPane>
               </items>

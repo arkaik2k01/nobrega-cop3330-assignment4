@@ -7,7 +7,7 @@ public class ToDoMaster
 {
     Map<String, ToDoList> masterList;
 
-    public ArrayList<Task> getList(String title)
+    public ToDoList getList(String title)
     {
         //If masterList contains title
             //return list
